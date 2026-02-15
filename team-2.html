@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Implementing Core Systems: Driving, Fuel, and Interaction</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div>
+                    <h1>Frame Works</h1>
+                    <div class="sub">Team journal and development notes.</div>
+                </div>
+                <nav>
+                    <a href="index.html">All posts</a>
+                    <a href>Member: Personal journal (link left empty)</a>
+                </nav>
+            </header>
+
+            <main>
+                <article class="post">
+                    <h2>Implementing Core Systems: Driving, Fuel, and
+                        Interaction</h2>
+                    <div class="byline"><time>2026-01-28 - 14:15</time></div>
+
+                    <div class="section">
+                        <p>Implementation began with deterministic, tunable
+                            vehicle parameters. I iterated acceleration curves,
+                            drag, and turning sensitivity using Rigidbody2D
+                            settings so that player inputs produced predictable
+                            outcomes. For fuel, I tied consumption to throttle
+                            and time, but smoothed the UI readout to avoid
+                            sudden jumps - this made the player feel the tension
+                            without the HUD feeling noisy. The gas station
+                            interaction is a simple state-machine: approach,
+                            dock (snap-to), refuel (timed), exit. That sequence
+                            was kept short so refueling becomes a tactical
+                            choice rather than a long interruption. The minimap
+                            uses a simple top-down icon layer; initial
+                            development prioritized icon clarity (high contrast
+                            symbols) because early user tests need immediate
+                            recognition of the gas station and safehouse
+                            locations. All of these engineering choices are
+                            documented and justified in the GDD to make future
+                            tuning straightforward.</p>
+                    </div>
+
+                    <div style="margin-top:28px"><a class="button"
+                            href="index.html">Back to posts</a></div>
+                </article>
+            </main>
+
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
